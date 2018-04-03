@@ -4,7 +4,7 @@ ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
 
 USER node
 
-RUM mkdir ~/.npm-global
+RUN mkdir ~/.npm-global
 RUN mkdir ~/yapi
 RUN npm install -g yapi-cli --registry=https://registry.npm.taobao.org 
 
