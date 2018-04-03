@@ -9,14 +9,14 @@ FROM node:9-alpine
 
 
 # USER node
-RUN mkdir ~/.npm-global
-RUN NPM_CONFIG_PREFIX=~/.npm-global
+RUN mkdir /.npm-global
+RUN NPM_CONFIG_PREFIX=/.npm-global
 RUN npm install -g yapi-cli --registry=https://registry.npm.taobao.org 
 
 
 
-RUN mkdir ~/my-yapi
-WORKDIR ~/my-yapi
+RUN mkdir /my-yapi
+WORKDIR /my-yapi
 
 EXPOSE 3000
 
