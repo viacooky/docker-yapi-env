@@ -1,7 +1,7 @@
 FROM node:9-alpine
 
 RUN groupadd --gid 1000 yapi && \
-    useradd --uid 1000 --gid yapi --shell /bin/bash --create-home yapi
+    useradd --uid 1000 --gid yapi --create-home yapi
 
 WORKDIR /home/yapi
 
