@@ -1,6 +1,6 @@
 FROM node:8-alpine
 
-RUN unsafe-perm true
+RUN npm config set unsafe-perm true
 RUN npm install -g yapi-cli --registry=https://registry.npm.taobao.org 
 
 # 更改APK源
