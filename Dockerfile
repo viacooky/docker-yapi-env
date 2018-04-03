@@ -1,7 +1,7 @@
 FROM node:9-alpine
 
 
-WORKDIR /home/yapi
+WORKDIR /yapi
 
 USER node
 
