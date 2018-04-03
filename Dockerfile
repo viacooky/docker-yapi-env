@@ -1,4 +1,4 @@
-FROM node:8.5.0-alpine
+FROM node:9-alpine
 
 # 更改APK源
 RUN cp /etc/apk/repositories /etc/apk/repositories.bak
