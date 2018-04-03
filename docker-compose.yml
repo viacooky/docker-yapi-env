@@ -13,13 +13,13 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./yapi:/yapi
+      - ./yapi:/home/node/yapi
   install:
     image: viacooky/yapi
     depends_on:
       - mongodb
     volumes:
-      - ./yapi:/yapi
+      - ./yapi:/home/node/yapi
     entrypoint: yapi
     command: install -v v1.3.8
   update:
@@ -27,6 +27,6 @@ services:
     depends_on:
       - mongodb
     volumes:
-      - ./yapi:/yapi
+      - ./yapi:/home/node/yapi
     entrypoint: yapi
     command: update
